@@ -1,6 +1,6 @@
-import {MessageHub} from "../../lib/hub";
 import {HelloMessage, IHelloMessage, IConsoleOutputMessage, ConsoleOutputMessage} from "./messages";
-import {IMessageContext} from "../../lib/context";
+import {MessageHub} from "strome.js/lib/hub";
+import {IMessageContext} from "strome.js/lib/context";
 
 var hub = new MessageHub();
 

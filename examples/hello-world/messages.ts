@@ -1,4 +1,4 @@
-import {Message} from "../../lib/message";
+import {Message} from "strome.js/lib/message";
 
 export interface IHelloMessage {
   name: string;

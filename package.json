@@ -4,7 +4,11 @@
   "description": "A message driven development framework",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "postinstall": "node_modules/.bin/typings install"
+  },
+  "typescript": {
+    "definition": "index.d.ts"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,7 @@
   "homepage": "https://github.com/no0dles/strome.js#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "dts-generator": "^1.7.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-istanbul": "^0.10.4",

@@ -6,6 +6,7 @@ var typescript = require('gulp-typescript');
 var sourceMaps = require('gulp-sourcemaps');
 var sequence = require('gulp-sequence');
 var clean = require('gulp-clean');
+var dtsGenerator = require('dts-generator');
 
 var project = typescript.createProject('tsconfig.json');
 
@@ -30,6 +31,16 @@ gulp.task('compile', ['clean'], function () {
     .pipe(typescript(project))
     .pipe(sourceMaps.write('.'))
     .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('dts-gen', function() {
+  dtsGenerator.default({
+    name: 'strome.js',
+    //project: '.',
+    baseDir: ".",
+    files: ["index.ts"],
+    out: 'dist/strome.js.d.ts'
+  });
 });
 
 gulp.task('pre-test', function () {
@@ -59,4 +70,4 @@ gulp.task('watch', ['compile'], function() {
 
 gulp.task('compile-test', sequence('compile', 'test'));
 gulp.task('test', sequence('pre-test', 'run-test', 'post-test'));
-gulp.task('build', sequence('clean', ['compile', 'copy-lib', 'copy-index']));
+gulp.task('build', sequence('clean', ['compile', 'copy-lib', 'copy-index', 'dts-gen']));
