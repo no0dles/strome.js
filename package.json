@@ -1,6 +1,6 @@
 {
   "name": "strome.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A message driven development framework",
   "main": "dist/index.js",
   "scripts": {
