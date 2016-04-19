@@ -17,4 +17,11 @@ build:
 
 deploy:
   steps:
+    - npm-install
+    - script:
+      name: install typings
+      code: |
+        node_modules/.bin/typings install
+    - hgen/gulp:
+        tasks: compile
     - turistforeningen/npm-publish
