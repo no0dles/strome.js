@@ -8,6 +8,7 @@
   "exclude": [
     "dist",
     "node_modules",
+    "examples",
     "typings/browser",
     "typings/browser.d.ts"
   ]

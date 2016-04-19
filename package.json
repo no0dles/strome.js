@@ -2,10 +2,7 @@
   "name": "strome.js",
   "version": "1.0.0",
   "description": "A message driven development framework",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha"
   },

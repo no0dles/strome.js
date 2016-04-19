@@ -10,3 +10,7 @@ build:
     - npm-install
     - hgen/gulp:
         tasks: compile-test
+
+deploy:
+  setps:
+    - npm-publish
