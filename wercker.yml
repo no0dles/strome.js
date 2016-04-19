@@ -12,5 +12,5 @@ build:
         tasks: compile-test
 
 deploy:
-  setps:
+  steps:
     - npm-publish
