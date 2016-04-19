@@ -1,4 +1,4 @@
-box: node
+box: node:5.1-slim
 
 build:
   steps:
