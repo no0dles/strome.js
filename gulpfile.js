@@ -70,4 +70,4 @@ gulp.task('watch', ['compile'], function() {
 
 gulp.task('compile-test', sequence('compile', 'test'));
 gulp.task('test', sequence('pre-test', 'run-test', 'post-test'));
-gulp.task('build', sequence('clean', ['compile', 'copy-lib', 'copy-index', 'dts-gen']));
+gulp.task('build', sequence('clean', ['compile', 'copy-lib', 'copy-index'], 'dts-gen'));
