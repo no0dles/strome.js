@@ -4,8 +4,7 @@
   "description": "A message driven development framework",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha",
-    "postinstall": "node_modules/.bin/typings install"
+    "test": "mocha"
   },
   "typescript": {
     "definition": "strome.d.ts"
