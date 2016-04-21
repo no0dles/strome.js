@@ -36,10 +36,9 @@ gulp.task('compile', ['clean'], function () {
 gulp.task('dts-gen', function() {
   dtsGenerator.default({
     name: 'strome.js',
-    //project: '.',
     baseDir: ".",
     files: ["index.ts"],
-    out: 'dist/strome.js.d.ts'
+    out: 'dist/index.d.ts'
   });
 });
 
@@ -50,7 +49,7 @@ gulp.task('pre-test', function () {
 });
 
 gulp.task('run-test', ['pre-test'], function () {
-  return gulp.src(['dist/test/*.js'])
+  return gulp.src(['dist/test/*.spec.js'])
     .pipe(mocha());
 });
 
