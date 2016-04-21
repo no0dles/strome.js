@@ -37,8 +37,10 @@ gulp.task('dts-gen', function() {
   dtsGenerator.default({
     name: 'strome.js',
     baseDir: ".",
+    main: "strome.js/index",
     files: ["index.ts"],
-    out: 'dist/index.d.ts'
+    out: 'dist/index.d.ts',
+    excludes: ["typings/**/*", "node_modules/**/*"]
   });
 });
 
