@@ -2,9 +2,13 @@ examples/
 coverage/
 typings/
 test/
+lib/
+dist/test
 
 gulpfile.js
 tsconfig.json
 typings.json
 wercker.yml
+.tachikoma.yml
+.npmignore
 **/*tgz
