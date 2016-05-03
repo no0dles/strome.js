@@ -30,12 +30,12 @@
     "gulp-clean": "^0.3.2",
     "gulp-istanbul": "^0.10.4",
     "gulp-mocha": "^2.2.0",
-    "gulp-open": "^1.0.0",
+    "gulp-open": "^2.0.0",
     "gulp-replace": "^0.5.4",
     "gulp-sequence": "^0.4.5",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.13.0",
     "mocha": "^2.4.5",
-    "typings": "^0.7.12"
+    "typings": "^0.8.1"
   }
 }
