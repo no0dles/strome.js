@@ -36,6 +36,6 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.13.0",
     "mocha": "^2.4.5",
-    "typings": "^0.8.1"
+    "typings": "^1.0.3"
   }
 }
